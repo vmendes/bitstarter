@@ -69,7 +69,7 @@ var loadChecks = function(checksfile) {
 var checkHtml = function(htmlfile, checksfile, url) {
  if (htmlfile) {
   console.log('checking file');
-  checkHtmlFile(htmlfile, checksfile);
+  return checkHtmlFile(htmlfile, checksfile);
  } else if (url) {
   console.log('checking url');
   checkFileFromURL(url, checksfile);
