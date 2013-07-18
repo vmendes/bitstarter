@@ -2,152 +2,198 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>My First Bitstarter</title>
+		<title>LetsBarter</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="assets/css/bootstrap.css" rel="stylesheet">
-		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="assets/css/social-buttons.css" rel="stylesheet">
+		<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+		<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="http://noizwaves.github.io/bootstrap-social-buttons/stylesheets/social-buttons.css" rel="stylesheet">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="assets/js/bootstrap.js"></script>
+		<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap.js"></script>
 		<style type="text/css">
 			@media (min-width: 980px) {
-				body {
+				body.bitstarter {
 					padding-top: 60px;
 				}
-				.linediv-l {
+				.bitstarter .linediv-l {
 					border-right: 1px white solid;
 				}
-				.linediv-r {
+				.bitstarter .linediv-r {
 					border-left: 1px white solid;
+				}
+				.bitstarter .nav .search-query {
+					width: 200px;
 				}
 			}
 
 			@media (max-width: 480px) {
-				.copy {
+				.bitstarter .copy {
 					padding: 2.5% 10%;
 				}
-				.linediv-l {
+				.bitstarter .linediv-l {
 					border-right: 1px white solid;
 				}
-				.linediv-r {
+				.bitstarter .linediv-r {
 					border-left: 1px white solid;
 				}
 			}
+			@media (min-width: 768px) {
+				.bitstarter .search-border {
+					margin: 0 8.54701%;
+				}
+			}
 
-			body {
+			body.bitstarter {
 				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 			}
-			.heading, .subheading {
+			.bitstarter .heading, .bitstarter .subheading {
 				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-				text-align: center;
+				text-align: left;
 			}
-			p.lead {
+
+			.bitstarter p.lead {
 				padding-top: 1.5%;
 				font-size: 24px;
 				line-height: 30px;
 			}
-			p {
+
+			.bitstarter p {
 				font-size: 18px;
 				line-height: 24px;
 			}
-			.pitch {
+			.bitstarter .pitch {
 				padding: 2.5% 0%;
 			}
-			.order {
+			.bitstarter .order {
 				padding: 2% 0%;
 			}
-			.actions {
+			.bitstarter .actions {
 				background-color: #343434;
 				padding: 3% 0%;
 			}
-			.video, .thermometer, .order, .social, .statistics {
+			.bitstarter .video, .bitstarter .thermometer, .bitstarter .order, .bitstarter .social, .bitstarter .statistics {
 				text-align: center;
 			}
-			.statistics h3, .statistics p {
+			.bitstarter .statistics h3, .bitstarter .statistics p {
 				color: white;
 			}
 
-			.copy {
+			.bitstarter .copy {
 				padding-top: 2.5%;
 				padding-bottom: 2.5%;
 				text-align: justify;
 			}
-			.asset {
+			.bitstarter .asset {
 				padding: 2.5% 0%;
 			}
-			.footer {
+			.bitstarter .footer {
 				color: #cccccc;
 				text-align: center;
 			}
-			.footer p {
+			.bitstarter .footer p {
 				font-size: 11px;
 			}
-			.footer a {
+			.bitstarter .footer a {
 				color: #ccccff;
 			}
 
 		</style>
 	</head>
-	<body>
+	<body class="bitstarter">
 
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-					<a class="brand" href="#">Bitstarter</a>
+					<a class="brand" href="#">LetsBarter</a>
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul class="nav">
 							<form class="navbar-search pull-left" action="">
 								<input type="text" class="search-query span2" placeholder="What are you looking for?">
 							</form>
-							
+
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a href="#">Action</a>
+										<a href="#">Antiques &amp; Art</a>
 									</li>
 									<li>
-										<a href="#">Another action</a>
+										<a href="#">Automotive</a>
 									</li>
 									<li>
-										<a href="#">Something else here</a>
-									</li>
-									<li class="divider"></li>
-									<li class="nav-header">
-										Nav header
+										<a href="#">Books, Comics &amp; Magazines</a>
 									</li>
 									<li>
-										<a href="#">Separated link</a>
+										<a href="#">Clothing &amp; Accessories</a>
 									</li>
 									<li>
-										<a href="#">One more separated link</a>
+										<a href="#">Electronics</a>
+									</li>
+									<li>
+										<a href="#">Home, Garden &amp; Family</a>
+									</li>
+									<li>
+										<a href="#">Sports</a>
+									</li>
+									<li>
+										<a href="#">Tickets &amp; Travel</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 
 						<ul class="nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-home"></i> John Doe <b class="caret"></b> </a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Dashboard</a>
+									</li>
+									<li>
+										<a href="#">Your Exchanges</a>
+									</li>
+									<li>
+										<a href="#">Your Wish List</a>
+									</li>
+									<li>
+										<a href="#">Edit Profile</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">Log Out</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Login <b class="caret"></b> </a>
+								<div class="dropdown-menu" style="padding: 15px 15px 0 15px;">
+									<form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+										<input id="user_username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30"  placeholder="Username"/>
+										<input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder="Password"/>
+										<input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+									</form>
+								</div>
+							</li>
 							<li>
-								<a href="#">Contact</a>
+								<a href="#"> <i class="icon-envelope"></i> </a>
 							</li>
 							<li class="divider-vertical"></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a href="#">Action</a>
+										<a href="#">Getting Started Guide</a>
 									</li>
 									<li>
-										<a href="#">Another action</a>
+										<a href="#">How do I create an account</a>
 									</li>
 									<li>
-										<a href="#">Something else here</a>
+										<a href="#">How do I exchange my stuff</a>
 									</li>
 									<li class="divider"></li>
 									<li>
-										<a href="#">Separated link</a>
+										<a href="#">See all FAQs</a>
 									</li>
 								</ul>
 							</li>
@@ -159,15 +205,27 @@
 
 		<div class="container">
 			<div class="row-fluid heading">
-				<div class="span12">
-					<h1>Product</h1>
+				<div class="span12 offset1">
+					<h1>LetsBarter</h1>
 				</div>
 			</div>
 			<div class="row-fluid subheading">
-				<div class="span12">
+				<div class="span12 offset1">
 					<p class="lead">
-						One sentence description.
+						A simple way to exchange your stuff
 					</p>
+				</div>
+			</div>
+			<div class="row-fluid search-bar ">
+				<div class="navbar offset1 search-border ">
+					<div class="navbar-inner">
+						<form class="navbar-form pull-left span12 ">
+							<input type="text" class="span9 pull-left " >
+							<button type="button" class="btn btn-inverse span3 pull-right " style="margin: 5px 0;">
+								<i class="icon-search"></i> Let's Barter!
+							</button>
+						</form>
+					</div>
 				</div>
 			</div>
 			<div class="row-fluid pitch">
@@ -254,9 +312,9 @@
 					<div class="accordion" id="accordion2">
 						<div class="accordion-group">
 							<div class="accordion-heading">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"> Collapsible Group Item #1 </a>
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Getting Started Guide</a>
 							</div>
-							<div id="collapseOne" class="accordion-body collapse in">
+							<div id="collapseOne" class="accordion-body collapse">
 								<div class="accordion-inner">
 									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 								</div>
@@ -264,7 +322,7 @@
 						</div>
 						<div class="accordion-group">
 							<div class="accordion-heading">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"> Collapsible Group Item #2 </a>
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">How do I create an account</a>
 							</div>
 							<div id="collapseTwo" class="accordion-body collapse">
 								<div class="accordion-inner">
@@ -274,7 +332,7 @@
 						</div>
 						<div class="accordion-group">
 							<div class="accordion-heading">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"> Collapsible Group Item #3 </a>
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">How do I exchange my stuff</a>
 							</div>
 							<div id="collapseThree" class="accordion-body collapse">
 								<div class="accordion-inner">
