@@ -141,10 +141,22 @@
 			.bitstarter .carousel .carousel-caption {
 				padding: 8px;
 			}
+			
+			.bitstarter .social p {
+				color: #cccccc;
+				text-align: center;
+				font-size: 11px;
+				margin: 10px 0 0 0;
+			}
+			.bitstarter .social div {
+				margin: 0;
+			}
+			
 			.bitstarter .footer {
 				color: #cccccc;
 				text-align: center;
 			}
+			
 			.bitstarter .footer p {
 				font-size: 11px;
 			}
@@ -295,10 +307,11 @@
 				</div>
 			</div>
 			<div class="row-fluid search-bar ">
+				<form>
 				<div class="navbar offset1 search-border">
 					<div class="navbar-inner accordion" id="accordionOptions" >
 						<div class="accordion-heading">
-							<form class="navbar-form pull-left span12 ">
+							<div class="navbar-form pull-left span12 ">
 								<div class="span9">
 									<input type="text" class="search-input span12">
 								</div>
@@ -313,26 +326,42 @@
 										<i class="icon-cog hidden-tablet"></i>More</a>
 									</li>
 								</ul>
-							</form>
+							</div>
 						</div>
 						<div id="searchOptions" class="accordion-body collapse" style="clear: left;">
-							<div class="accordion-inner" >
-								Location:
-								<select class="selectpicker">
-									<option>Dublin</option>
-									<option>Belfast</option>
-									<option>Galway</option>
-								</select>
+							<div class="accordion-inner form-inline ">
+								<div class="control-group">
+										<label class="control-label">
+											Category:
+										</label>
+										<select class="controls selectpicker">
+											<option>All Items</option>
+											<option>Antiques and Art</option>
+											<option>Clothes</option>
+											<option>Other</option>
+										</select>
+									</div>
+								<div class="control-group">
+										<label class="control-label" >
+											Location:
+										</label>
+										<select class="controls selectpicker">
+											<option>Dublin</option>
+											<option>Belfast</option>
+											<option>Galway</option>
+										</select>
+								</div>
 
 							</div>
 						</div>
 					</div>
 				</div>
+				</form>
 			</div>
 
 			<div class="row-fluid">
 
-				<div class="offset1 rotator well">
+				<div class="offset1 rotator well hidden-phone">
 					<h4 class="pull-left">Recent Listings</h4>
 					<a href="#" class="text-right pull-right"><i class="icon-tags"></i> Place an Ad for Free now!</a>
 
@@ -345,7 +374,7 @@
 						</ol>
 
 						<!-- Carousel items -->
-						<div class="carousel-inner">
+						<div class="carousel-inner ">
 
 							<div class="item active">
 								<div class="row-fluid">
@@ -479,8 +508,13 @@
 				</div><!--/well-->
 			</div>
 
-			<div class="row-fluid pitch">
-				<div class="span12 text-center social">
+			<div class="row-fluid social">
+				<div class="span12 text-center">
+					<p>
+						Share with
+					</p>
+				</div>
+				<div class="span12 text-center">
 						<button class="btn btn-twitter">
 							<i class="icon-twitter"></i> | Twitter
 						</button>
