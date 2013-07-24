@@ -13,580 +13,234 @@
 		<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap.js"></script>
 		<script src="http://caseyjhol.github.io/bootstrap-select/javascripts/bootstrap-select.js"></script>
 		<style type="text/css">
-			@media (min-width: 980px) {
-				body.bitstarter {
-					padding-top: 60px;
-				}
-				.bitstarter .linediv-l {
-					border-right: 1px white solid;
-				}
-				.bitstarter .linediv-r {
-					border-left: 1px white solid;
-				}
-				.bitstarter .nav .search-query {
-					width: 200px;
-				}
-
+			.bitstarter .info-box {
+				border: 1px solid #ddd;
+				padding: 10px;
+				margin-bottom: 10px;
+				height: 1%;
+				overflow: hidden;
 			}
-
-			@media (max-width: 480px) {
-				.bitstarter .copy {
-					padding: 2.5% 10%;
-				}
-				.bitstarter .linediv-l {
-					border-bottom: 1px white solid;
-				}
-				.bitstarter .linediv-r {
-					border-top: 1px white solid;
-				}
-			}
-			@media (min-width: 768px) {
-				.bitstarter .search-border {
-					margin: 0 8.54701%;
-				}
-				.bitstarter .rotator {
-					margin: 0 8.54701%;
-				}
-
-			}
-			.bitstarter .login-input {
-				width: 96%;
-				padding: 4px 1.94680851063829%;
-				margin-top: 5px;
-			}
-			.bitstarter .divider-vertical {
-				margin: 0;
-			}
-
-			body.bitstarter {
-				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-			}
-			.bitstarter .heading, .bitstarter .subheading {
-				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-				text-align: left;
-			}
-
-			.bitstarter p.lead {
-				padding-top: 1.5%;
-				font-size: 24px;
-				line-height: 30px;
-			}
-
-			.bitstarter p {
-				font-size: 18px;
-				line-height: 24px;
-			}
-			.bitstarter a:hover {
-				text-decoration: none;
-			}
-			.bitstarter .pitch {
-				padding: 2.5% 0%;
-			}
-			.bitstarter .search-input {
-				font-size: 20px;
-			}
-			.bitstarter .order {
-				padding: 2% 0%;
-			}
-			.bitstarter .actions {
-				background-color: #343434;
-				padding: 3% 0%;
-			}
-			.bitstarter .video, .bitstarter .thermometer, .bitstarter .order, .bitstarter .social, .bitstarter .statistics {
-				text-align: center;
-			}
-			.bitstarter .statistics h3, .bitstarter .statistics p {
-				color: white;
-			}
-
-			.bitstarter .copy {
-				padding-top: 2.5%;
-				padding-bottom: 2.5%;
-				text-align: justify;
-			}
-			.bitstarter .asset {
-				padding: 2.5% 0%;
-			}
-			.bitstarter .carousel .thumbnail {
+			.bitstarter .info-box .img-holder {
+				float: left;
+				width: 180px;
 				position: relative;
 			}
-			.bitstarter .carousel-caption p {
+			.info-box img {
+				float: left;
+				border: 1px solid #ddd;
+				margin-right: 15px;
+			}
+			.bitstarter .info-box .info {
+				height: 1%;
+				overflow: hidden;
+				padding: 0 5px 0 10px;
+			}
+			.bitstarter .info-box .info .holder {
+				padding-bottom: 1px;
+				margin-bottom: 1px;
+				height: 1%;
+				color: #5a7284;
+				padding-top: 5px;
+				position: relative;
+				width: 100%;
+			}
+			.info-box .info .holder dl {
+				max-height: 22px;
+				margin-left: 10px;
+			}
+			.info dl {
+				float: right;
+				margin: -1px 0 0;
+				position: relative;
+			}
+			.info dl dd {
+				font-size: 18px;
+				font-weight: bold;
+				display: inline;
+				margin: 0;
+				color: #000;
+				line-height: 24px;
+			}
+			.info dl span {
+				font-size: 11px;
+				font-weight: normal;
+				color: #5a7284;
+			}
+			.info-box h4 {
+				font-size: 15px;
+				line-height: 18px;
+				max-height: 36px;
+				overflow: hidden;
+				margin: 0;
+				font-weight: normal;
+			}
+			.info-box .info .holder {
+				padding-bottom: 1px;
+				margin-bottom: 1px;
+				height: 1%;
+				color: #5a7284;
+				padding-top: 5px;
+				position: relative;
+			}
+			.info ul {
+				margin: -3px 0 0 -8px;
+				padding: 0;
+				list-style: none;
+				float: left;
+			}
+			.info ul li {
+				padding: 0 7px 0 9px;
+				float: left;
 				font-size: 12px;
 			}
-			.bitstarter .carousel-caption h4 {
-				font-size: 14px;
+			.info ul li.first {
+				background: none;
 			}
-			.bitstarter .rotator h4 {
-				margin-top: 0;
+			.info-box .holder.description {
+				height: 39px;
+				padding-top: 4px;
+				overflow: hidden;
 			}
-			.bitstarter .carousel {
-				margin-top: 30px;
-				margin-bottom: 0;
+			.info-box .info .holder {
+				padding-bottom: 1px;
+				margin-bottom: 1px;
+				height: 1%;
+				color: #5a7284;
+				padding-top: 5px;
+				position: relative;
 			}
-			.bitstarter .carousel .carousel-caption {
-				padding: 8px;
+			.item_description {
+				padding: 4px 10px 10px 0;
 			}
-			.bitstarter .footer {
-				color: #cccccc;
-				text-align: center;
+			.info-box .info .sub-holder {
+				padding: 0;
+				margin: 0;
+				background: none;
 			}
-			.bitstarter .footer p {
-				font-size: 11px;
+			.info-box .info .holder {
+				padding-bottom: 1px;
+				margin-bottom: 1px;
+				height: 1%;
+				color: #5a7284;
+				padding-top: 5px;
+				position: relative;
 			}
-			.bitstarter .footer a {
-				color: #ccccff;
+			.holder.sub-holder {
+				clear: both;
+				min-height: 26px;
 			}
 
-			.accordion-body.in:hover {
-				overflow: visible;
-			}
 		</style>
-		<script type="text/javascript">
-			$(document).ready(function() {
-
-				$('.search-border ul.nav-pills li a').click(function(e) {
-					$(this).parent('li').toggleClass('active');
-				});
-
-				$('.selectpicker').selectpicker();
-			});
-			$(document).ready(function() {
-				$('#myCarousel').carousel({
-					interval : 10000
-				})
-			});
-
-		</script>
+		<script type="text/javascript"></script>
 	</head>
 	<body class="bitstarter">
 
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-					<a class="brand" href="#">LetsBarter</a>
-					<div class="nav-collapse collapse navbar-responsive-collapse">
-						<ul class="nav">
-							<form class="navbar-search pull-left" action="">
-								<input type="text" class="search-query span2" placeholder="What are you looking for?">
-							</form>
+		<div style="margin-top:50px">
 
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#">Antiques &amp; Art</a>
-									</li>
-									<li>
-										<a href="#">Automotive</a>
-									</li>
-									<li>
-										<a href="#">Books, Comics &amp; Magazines</a>
-									</li>
-									<li>
-										<a href="#">Clothing &amp; Accessories</a>
-									</li>
-									<li>
-										<a href="#">Electronics</a>
-									</li>
-									<li>
-										<a href="#">Home, Garden &amp; Family</a>
-									</li>
-									<li>
-										<a href="#">Sports</a>
-									</li>
-									<li>
-										<a href="#">Tickets &amp; Travel</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-
-						<ul class="nav pull-right">
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-home"></i> John Doe <b class="caret"></b> </a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#"><i class="icon-inbox"></i> Inbox</a>
-									</li>
-									<li>
-										<a href="#"><i class="icon-plus-sign"></i> Add Item for Free</a>
-									</li>
-									<li>
-										<a href="#"><i class="icon-briefcase"></i> Your Listings</a>
-									</li>
-									<li>
-										<a href="#"><i class="icon-gift"></i> Your Wish List</a>
-									</li>
-									<li>
-										<a href="#"><i class="icon-edit"></i> Edit Profile</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="#"><i class="icon-off"></i> Log Out</a>
-									</li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Login <b class="caret"></b> </a>
-								<div class="dropdown-menu" style="padding: 15px 15px 0 15px;">
-									<form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
-										<input id="user_username" class="login-input" type="text" name="user[username]" placeholder="Username"/>
-										<input id="user_password" class="login-input" type="password" name="user[password]" placeholder="Password"/>
-										<input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
-									</form>
-								</div>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="#"> <i class="icon-envelope"></i> </a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-question-sign"></i></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#">Getting Started Guide</a>
-									</li>
-									<li>
-										<a href="#">How do I create an account</a>
-									</li>
-									<li>
-										<a href="#">How do I exchange my stuff</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="#">See all FAQs</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div><!-- /.nav-collapse -->
-				</div>
-			</div><!-- /navbar-inner -->
-		</div><!-- /navbar -->
+		</div>
 
 		<div class="container">
-			<div class="row-fluid heading">
-				<div class="span12 offset1">
-					<h1>LetsBarter</h1>
+
+			<div class="row-fluid search-page span11">
+				<div class="search-filter well span3 pull-left">
+
 				</div>
-			</div>
-			<div class="row-fluid subheading">
-				<div class="span12 offset1">
-					<p class="lead">
-						The simple way to exchange your stuff
-					</p>
-				</div>
-			</div>
-			<div class="row-fluid search-bar ">
-				<div class="navbar offset1 search-border">
-					<div class="navbar-inner accordion" id="accordionOptions" >
-						<div class="accordion-heading">
-							<form class="navbar-form pull-left span12 ">
-								<div class="span9">
-									<input type="text" class="search-input span12">
-								</div>
-								<button type="button" class="btn btn-inverse span2 pull-left">
-									<i class="icon-search hidden-tablet"></i> Search
-								</button>
-								<ul class="nav nav-pills span1 pull-right" style="margin-top: 1px">
-									<li class="span12">
-										<a class="accordion-toggle span12"
-										data-toggle="collapse"  data-parent="#accordionOptions"
-										href="#searchOptions" style="padding-left: 4%; padding-right: 4%; text-align: center"> 
-										<i class="icon-cog "></i>More</a>
+				<div class="search-results well span9 pull-right">
+					<div class="search-result info-box">
+
+						<div class="img-holder">
+							<a href="/mobile-phones/factory-unlocked-iphone-4s-16gb/3308698"> <img src="http://m0.dmlimg.com/NjdiMGY2ZmQxMTU5MDhiZjNiZTNlYmMwMjE2YmE0MjfrkcU6Cx1FA4PRCLbGGSRgaHR0cDovL21lZGlhLmFkc2ltZy5jb20vZTdmMGM3OTZkZTNiYTMxMzJmMzlhNTcxMGY1NTA5MDI1ZWNiNWZlMWEyN2MwNWRkZmJkNTM0ODMzZDE4MDEwZS5qcGd8fHx8fHwxODB4MTIwfGh0dHA6Ly93d3cuYWR2ZXJ0cy5pZS9zdGF0aWMvaS93YXRlcm1hcmsucG5nfHxodHRwOi8vd3d3LmFkdmVydHMuaWUvc3RhdGljL2kvbm9uZS1pbWFnZS5qcGd8.jpg" data-failover="http://c0.adsimg.com/i/none_180.jpg" alt="Factory unlocked Iphone 4S 16GB" width="180" height="120"> </a>
+						</div>
+
+						<div class="info">
+							<div class="holder header">
+								<dl>
+									<dd>
+										<span> Asking price: </span>
+										€330
+									</dd>
+								</dl>
+
+								<h4 class=""><a href="/mobile-phones/factory-unlocked-iphone-4s-16gb/3308698" title="Factory unlocked Iphone 4S 16GB"> Factory unlocked Iphone 4S 16GB </a></h4>
+							</div>
+
+							<div class="premium_sr_badge"></div>
+
+							<!-- List under the heading -->
+							<div class="holder ">
+
+								<ul>
+									<!-- Others -->
+									<li class="first ">
+										Posted by <a href="/member/302164">iphone168</a>
+
+									</li>
+
+									<li>
+										<a href="/for-sale/mobile-phones-accessories/mobile-phones/188/county-Dublin/area_Raheny/">Raheny</a>, <a href="/for-sale/mobile-phones-accessories/mobile-phones/188/county-Dublin/">Dublin</a>
+									</li>
+
+									<li class="search-icons">
+										<div></div>
 									</li>
 								</ul>
-							</form>
-						</div>
-						<div id="searchOptions" class="accordion-body collapse" style="clear: left;">
-							<div class="accordion-inner" >
-								Location:
-								<select class="selectpicker">
-									<option>Mustard</option>
-									<option>Ketchup</option>
-									<option>Relish</option>
-								</select>
-
+								<div class="clear"></div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="row-fluid">
-
-				<div class="offset1 rotator well">
-					<h4 class="pull-left">Recent Listings</h4>
-					<a href="#" class="text-right pull-right"><i class="icon-tags"></i> Place an Ad for Free now!</a>
-
-					<div id="myCarousel" class="carousel slide">
-
-						<ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-							<li data-target="#myCarousel" data-slide-to="2"></li>
-						</ol>
-
-						<!-- Carousel items -->
-						<div class="carousel-inner">
-
-							<div class="item active">
-								<div class="row-fluid">
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-								</div><!--/row-fluid-->
-							</div><!--/item-->
-
-							<div class="item">
-								<div class="row-fluid">
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-								</div><!--/row-fluid-->
-							</div><!--/item-->
-
-							<div class="item">
-								<div class="row-fluid">
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-									<div class="span3">
-										<a href="#x" class="thumbnail"> <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-										<div class="carousel-caption">
-											<h4>Thumbnail label</h4>
-											<p>
-												Added on 19/05/2001
-											</p>
-										</div> </a>
-									</div>
-								</div><!--/row-fluid-->
-							</div><!--/item-->
-
-						</div><!--/carousel-inner-->
-
-						<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-						<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-					</div><!--/myCarousel-->
-
-				</div><!--/well-->
-			</div>
-
-			<div class="row-fluid pitch">
-				<div class="span5 offset1 video">
-					<img class="img-polaroid" src="http://placehold.it/480x300" />
-				</div>
-
-				<div class="span5 actions">
-					<div class="span8 offset2">
-						<div class="statistics">
-							<div class="span4">
-								<div class="linediv-l">
-									<h3>1000</h3>
-									<p>
-										backers
-									</p>
+							<!-- Pending and condition stuff -->
+							<div class="holder description">
+								<div class="item_description">
+									Factory unlocked Iphone 4S 16GB for sale. In excellent condition without any marks. Color is black.  It comes with a charger only  No swaps no offers thanks.
 								</div>
 							</div>
-							<div class="span4">
-								<div class="linediv-c">
-									<h3>$6000</h3>
-									<p>
-										of $10,000
-									</p>
-								</div>
+							<!-- Bottom list -->
+							<div class="holder sub-holder">
+
+								<ul class="date-entered">
+
+									<li class="first">
+										Category: <span class="ellipsis_text"> <a href="/for-sale/mobile-phones-accessories/mobile-phones/188" class="category_name_span">Mobile Phones</a> </span>
+
+										- Entered/Renewed 3 hours ago
+									</li>
+									<li class="">
+										<a href="/mobile-phones/factory-unlocked-iphone-4s-16gb/3308698#comments"> 44 comments </a>
+									</li>
+
+								</ul>
 							</div>
-							<div class="span4">
-								<div class="linediv-r">
-									<h3>10</h3>
-									<p>
-										days left
-									</p>
-								</div>
-							</div>
+							<img src="" width="0" height="0" alt="">
 						</div>
 					</div>
-					<div class="span10 offset1">
-						<div class="thermometer progress active">
-							<div class="bar bar-success" style="width:60%"></div>
-							<div class="bar bar-warning" style="width:40%"></div>
-						</div>
+
+					<div style="clear:both"></div>
+				</div>
+				<div class="search-pagination pull-right span9 text-center">
+					<div class="pagination pagination-centered">
+						<ul>
+							<li class="disabled">
+								<a href="#">«</a>
+							</li>
+							<li class="active">
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>
+								<a href="#">4</a>
+							</li>
+							<li>
+								<a href="#">5</a>
+							</li>
+							<li>
+								<a href="#">»</a>
+							</li>
+						</ul>
 					</div>
-					<div class="span6 offset3 order">
-						<button class="btn btn-success btn-large">
-							Preorder
-						</button>
-					</div>
-					<div class="span8 offset2 social">
-						<button class="btn btn-twitter">
-							<i class="icon-twitter"></i> | Twitter
-						</button>
-						<button class="btn btn-facebook">
-							<i class="icon-facebook"></i> | Facebook
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="row-fluid section1">
-				<div class="span5 offset1 asset">
-					<img class="img-polaroid" src="http://placehold.it/480x300" />
-				</div>
-				<div class="span5 copy">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-				</div>
-			</div>
-
-			<div class="row-fluid section2">
-				<div class="span5 offset1 copy copy-right">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-				</div>
-				<div class="span5 asset">
-					<img class="img-polaroid" src="http://placehold.it/480x300" />
-				</div>
-			</div>
-
-			<div class="row faq">
-				<div class="span10 offset1">
-					<h3>FAQ</h3>
-					<div class="accordion" id="accordion2">
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Getting Started Guide</a>
-							</div>
-							<div id="collapseOne" class="accordion-body collapse">
-								<div class="accordion-inner">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">How do I create an account</a>
-							</div>
-							<div id="collapseTwo" class="accordion-body collapse">
-								<div class="accordion-inner">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">How do I exchange my stuff</a>
-							</div>
-							<div id="collapseThree" class="accordion-body collapse">
-								<div class="accordion-inner">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row-fluid footer">
-				<div class="span12">
-					<p>
-						This is licensed under the
-						<a href="http://creativecommons.org/licenses/by-sa/3.0">CC By-SA 3.0</a>.
-
-					</p>
 				</div>
 			</div>
 		</div>
