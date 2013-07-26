@@ -44,32 +44,32 @@
 			.bitstarter .container .search-page {
 				padding: 0;
 			}
-			.bitstarter .info-box {
+			.bitstarter .result-box {
 				border: 1px solid #ddd;
 				padding: 10px;
 				margin-bottom: 10px;
 				height: 1%;
 				overflow: hidden;
 			}
-			.bitstarter .info-box:hover {
+			.bitstarter .result-box:hover {
 				background-color: white;
 			}
-			.bitstarter .info-box .img-holder {
+			.bitstarter .result-box .img-holder {
 				float: left;
 				width: 180px;
 				position: relative;
 			}
-			.bitstarter .info-box img {
+			.bitstarter .result-box img {
 				float: left;
 				border: 1px solid #ddd;
 				margin-right: 15px;
 			}
-			.bitstarter .info-box .info {
+			.bitstarter .result-box .info {
 				height: 1%;
 				overflow: hidden;
 				padding: 0 5px 0 10px;
 			}
-			.bitstarter .info-box .info .holder {
+			.bitstarter .result-box .info .holder {
 				padding-bottom: 1px;
 				margin-bottom: 1px;
 				height: 1%;
@@ -78,7 +78,7 @@
 				position: relative;
 				width: 100%;
 			}
-			.bitstarter .info-box .info .holder dl {
+			.bitstarter .result-box .info .holder dl {
 				max-height: 22px;
 				margin-left: 10px;
 			}
@@ -100,7 +100,7 @@
 				font-weight: normal;
 				color: #5a7284;
 			}
-			.bitstarter .info-box h4 {
+			.bitstarter .result-box h4 {
 				font-size: 15px;
 				line-height: 18px;
 				max-height: 36px;
@@ -108,7 +108,7 @@
 				margin: 0;
 				font-weight: normal;
 			}
-			.bitstarter .info-box .info .holder {
+			.bitstarter .result-box .info .holder {
 				padding-bottom: 1px;
 				margin-bottom: 1px;
 				height: 1%;
@@ -130,12 +130,12 @@
 			.bitstarter .info ul li.first {
 				background: none;
 			}
-			.bitstarter .info-box .holder.description {
+			.bitstarter .result-box .holder.description {
 				height: 39px;
 				padding-top: 4px;
 				overflow: hidden;
 			}
-			.bitstarter .info-box .info .holder {
+			.bitstarter .result-box .info .holder {
 				padding-bottom: 1px;
 				margin-bottom: 1px;
 				height: 1%;
@@ -146,12 +146,12 @@
 			.bitstarter .item_description {
 				padding: 4px 10px 10px 0;
 			}
-			.bitstarter .info-box .info .sub-holder {
+			.bitstarter .result-box .info .sub-holder {
 				padding: 0;
 				margin: 0;
 				background: none;
 			}
-			.bitstarter .info-box .info .holder {
+			.bitstarter .result-box .info .holder {
 				padding-bottom: 1px;
 				margin-bottom: 1px;
 				height: 1%;
@@ -175,12 +175,7 @@
 				position: relative;
 				margin-bottom: 10px
 			}
-			.bitstarter .search-sidebar .box.category_selected {
-				margin-bottom: 4px
-			}
-			.bitstarter .search-sidebar .box.white {
-				background: #fff
-			}
+			
 			.bitstarter .search-sidebar .box.grey {
 				background: #FAFAFA
 			}
@@ -206,9 +201,8 @@
 			.bitstarter .search-sidebar h4 a:hover, .bitstarter .search-sidebar .list a:hover {
 				text-decoration: underline
 			}
-			.bitstarter .search-sidebar .std_horiz_padding {
-				padding-left: 10px;
-				padding-right: 10px
+			.bitstarter .search-sidebar .field-box {
+				padding: 10px;
 			}
 			.bitstarter .search-sidebar .list {
 				padding: 0;
@@ -217,14 +211,6 @@
 			}
 			.bitstarter .search-sidebar .list li {
 				padding-bottom: 2px
-			}
-			.bitstarter .search-sidebar .selection_container {
-				padding-top: 10px;
-				padding-bottom: 10px
-			}
-			.bitstarter .search-sidebar .input_container {
-				padding-top: 10px;
-				padding-bottom: 10px
 			}
 			.bitstarter .search-sidebar select {
 				color: #29333b;
@@ -235,9 +221,6 @@
 			.bitstarter .search-sidebar select.full_width {
 				width: 100%
 			}
-			.bitstarter .search-sidebar select.half_width {
-				width: 61px
-			}
 			.bitstarter .search-sidebar .range_seperator {
 				margin-left: 3px;
 				margin-right: 3px
@@ -246,9 +229,6 @@
 				border: 1px solid #d4d4d4;
 				height: 17px;
 				padding: 3px 0 3px 3px
-			}
-			.bitstarter .search-sidebar .text_input.half_width {
-				width: 55px
 			}
 			.bitstarter .search-sidebar .text_input.full_width {
 				width: 140px
@@ -259,53 +239,8 @@
 			.bitstarter .search-sidebar .checklist a {
 				cursor: pointer
 			}
-			.bitstarter .search-sidebar .refine_refresh {
-				width: 28px;
-				height: 25px;
-				background: url(../../../i/refine_refresh_sprite.png) no-repeat;
-				text-indent: -1000px;
-				border: none;
-				cursor: pointer;
-				padding: 0;
-				float: right
-			}
-			.bitstarter .search-sidebar .refine_refresh:hover {
-				background: url(../../../i/refine_refresh_sprite.png) 0 -25px no-repeat
-			}
-			.bitstarter .search-sidebar .has_show_hide_more {
-				overflow: hidden
-			}
-			.bitstarter .search-sidebar .show_hide {
-				width: 100%;
-				border: none;
-				border-top: 1px solid #ddd;
-				background: #f0f0f0;
-				position: absolute;
-				bottom: 0;
-				text-align: center;
-				padding-bottom: 10px;
-				padding-top: 11px
-			}
-			.bitstarter .search-sidebar .show_hide a {
-				text-decoration: none;
-				font-weight: bold
-			}
-			.bitstarter .search-sidebar .show_hide a:hover {
-				text-decoration: underline
-			}
-			.bitstarter .search-sidebar .show_hide .arrow {
-				position: absolute;
-				top: -1px;
-				left: 91px;
-				width: 19px;
-				height: 11px;
-				background: url(../../../i/more_less_sprite.gif) no-repeat
-			}
-			.bitstarter .search-sidebar .show_hide.showing .arrow {
-				position: absolute;
-				top: -10px;
-				background: url(../../../i/more_less_sprite.gif) 0 -11px no-repeat
-			}
+			
+			
 			.bitstarter .search-sidebar .sub_container, .bitstarter .search-sidebar .box.sub_container {
 				border: none;
 				border-bottom: 1px solid #DDD;
@@ -325,14 +260,7 @@
 			.bitstarter .search-sidebar .box .sub_container .selection_container {
 				padding-top: 1px
 			}
-			.bitstarter .search-sidebar .arrow_down {
-				position: absolute;
-				bottom: -18px;
-				left: 91px;
-				width: 19px;
-				background: url(../../../i/refine_category_arrow.gif) no-repeat;
-				z-index: 2
-			}
+			
 			.bitstarter .search-sidebar .facet {
 				font-weight: normal;
 				margin-left: 3px;
@@ -367,30 +295,8 @@
 				margin-bottom: 13px;
 				margin-top: -3px
 			}
-			.bitstarter .search-sidebar .range_list .list .selected {
-				background: #e7e7e7 url(../../../i/refine_range_list_arrow.png) no-repeat right;
-				width: 180px
-			}
-			.bitstarter .search-sidebar .range_list .list .cancel {
-				width: 14px;
-				height: 14px;
-				background: url(../../../i/refine_range_list_cancel_sprite.png) no-repeat;
-				float: right;
-				margin-right: 14px;
-				margin-top: 2px;
-				cursor: pointer
-			}
-			.bitstarter .search-sidebar .range_list .list .cancel:hover {
-				background: url(../../../i/refine_range_list_cancel_sprite.png) 0 -14px no-repeat
-			}
-			.bitstarter .search-sidebar .car_refine.hide_more {
-				height: 139px
-			}
-			.bitstarter .search-sidebar .simple_list .selection_container {
-				padding-top: 7px;
-				padding-bottom: 6px
-			}
-			.bitstarter .search-sidebar .fix-facet.fixed-facet .fix-facet-text {
+			
+			.bitstarter .search-sidebar .fix-facet.fixed-facet .filter-link {
 				display: inline-block;
 				vertical-align: bottom
 			}
@@ -399,6 +305,13 @@
 			}
 			.bitstarter .search-filter button {
 				margin-left: 0;
+			}
+			.bitstarter .search-filter .filter-item {
+				//border-top: 1px solid #CCC;
+				padding-top: 2px;
+			}
+			.bitstarter .search-filter .filter-item:first-child {
+				border-top: none;
 			}
 
 		</style>
@@ -410,73 +323,73 @@
 
 		</div>
 
-		<div class="container">
+		<div class="container-fluid">
 
 			<div class="row-fluid search-page span11">
 				<div class="search-filter search-sidebar well span3 pull-left">
 					<form action="" method="get" id="search_refine">
 						<input type="hidden" name="q" value="java">
 						<div class="box grey ">
-							<h4 class="std_horiz_padding fix-facet"><a name="cat_selection"></a><span class="fix-facet-text">All Categories</span><span class="facet">(283)</span></h4>
-							<div class="selection_container std_horiz_padding">
+							<h4 class="field-box fix-facet"><a name="cat_selection"></a><span class="filter-link">All Categories</span><span class="facet">(283)</span></h4>
+							<div class="selection_container field-box">
 								<ul class="list">
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Books &amp; Magazines" href="/for-sale/books-magazines/87/q_java/">Books &amp; Magazines</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Books &amp; Magazines" href="/for-sale/books-magazines/87/q_java/">Books &amp; Magazines</a>
 										<span class="facet">(27)</span>
 									</li>
-									<li class="fix-facet fixed-facet">
-										<a class="fix-facet-text ellipsis" title="Clothes, Shoes &amp; Accessories" href="/for-sale/clothes-shoes-accessories/114/q_java/" style="width: 163px;">Clothes, Shoes &amp; Accessories</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Clothes, Shoes &amp; Accessories" href="/for-sale/clothes-shoes-accessories/114/q_java/" style="width: 163px;">Clothes, Shoes &amp; Accessories</a>
 										<span class="facet">(4)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Computers" href="/for-sale/computers/124/q_java/">Computers</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Computers" href="#">Computers</a>
 										<span class="facet">(8)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Crazy Random Stuff" href="/for-sale/crazy-random-stuff/32/q_java/">Crazy Random Stuff</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Crazy Random Stuff" href="#">Crazy Random Stuff</a>
 										<span class="facet">(2)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="DIY &amp; Renovation" href="/for-sale/diy-renovation/140/q_java/">DIY &amp; Renovation</a>
+									<li class="filter-item">
+										<a class="filter-link" title="DIY &amp; Renovation" href="#">DIY &amp; Renovation</a>
 										<span class="facet">(1)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Electronics" href="/for-sale/electronics/145/q_java/">Electronics</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Electronics" href="#">Electronics</a>
 										<span class="facet">(6)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Home &amp; Garden" href="/for-sale/home-garden/159/q_java/">Home &amp; Garden</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Home &amp; Garden" href="#">Home &amp; Garden</a>
 										<span class="facet">(5)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Jewellery &amp; Watches" href="/for-sale/jewellery-watches/172/q_java/">Jewellery &amp; Watches</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Jewellery &amp; Watches" href="#">Jewellery &amp; Watches</a>
 										<span class="facet">(1)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Jobs" href="/jobs/3/q_java/">Jobs</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Jobs" href="#">Jobs</a>
 										<span class="facet">(145)</span>
 									</li>
-									<li class="fix-facet fixed-facet">
-										<a class="fix-facet-text ellipsis" title="Mobile Phones &amp; Accessories" href="/for-sale/mobile-phones-accessories/185/q_java/" style="width: 156px;">Mobile Phones &amp; Accessories</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Mobile Phones &amp; Accessories" href="#" style="width: 156px;">Mobile Phones &amp; Accessories</a>
 										<span class="facet">(71)</span>
 									</li>
-									<li class="fix-facet fixed-facet">
-										<a class="fix-facet-text ellipsis" title="Music Instruments &amp; Equipment" href="/for-sale/music-instruments-equipment/54/q_java/" style="width: 163px;">Music Instruments &amp; Equipment</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Music Instruments &amp; Equipment" href="#" style="width: 163px;">Music Instruments &amp; Equipment</a>
 										<span class="facet">(3)</span>
 									</li>
-									<li class="ellipsis fix-facet">
-										<a class="fix-facet-text" title="Pets" href="/for-sale/pets/624/q_java/">Pets</a>
+									<li class="filter-item">
+										<a class="filter-link" title="Pets" href="#">Pets</a>
 										<span class="facet">(10)</span>
 									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="box grey single_select location ">
-							<h4 class="std_horiz_padding">Location</h4>
+							<h4 class="field-box">Location</h4>
 
 							<div class="box grey single_select location sub_container last">
-								<h4 class="std_horiz_padding">County</h4>
-								<div class="selection_container std_horiz_padding">
+								<h4 class="field-box">County</h4>
+								<div class="selection_container field-box">
 									<a name="countyID"></a>
 									<select name="countyID" id="countyID" class="full_width auto-refresh">
 										<option value="0">All Counties</option><option value="27">Antrim</option><option value="28">Armagh</option><option value="10">Carlow</option><option value="25">Cavan</option><option value="16">Clare</option><option value="15">Cork</option><option value="31">Derry</option><option value="24">Donegal</option><option value="32">Down</option><option value="1">Dublin</option><option value="30">Fermanagh</option><option value="19">Galway</option><option value="14">Kerry</option><option value="3">Kildare</option><option value="11">Kilkenny</option><option value="8">Laois</option><option value="23">Leitrim</option><option value="17">Limerick</option><option value="5">Longford</option><option value="9">Louth</option><option value="20">Mayo</option><option value="2">Meath</option><option value="26">Monaghan</option><option value="6">Offaly</option><option value="21">Roscommon</option><option value="22">Sligo</option><option value="18">Tipperary</option><option value="29">Tyrone</option><option value="12">Waterford</option><option value="7">Westmeath</option><option value="13">Wexford</option><option value="4">Wicklow</option>
@@ -486,39 +399,39 @@
 
 						</div>
 						<div class="box grey range_list ">
-							<h4 class="std_horiz_padding">Price</h4>
-							<div class="selection_container std_horiz_padding">
+							<h4 class="field-box">Price</h4>
+							<div class="selection_container field-box">
 								<ul class="list">
 									<li>
-										<a href="/for-sale/q_java/price_0/">Free</a>
+										<a href="#">Free</a>
 										<span class="facet">(141)</span>
 									</li>
 									<li>
-										<a href="/for-sale/q_java/price_1-50/">€1 to €50</a>
+										<a href="#">€1 to €50</a>
 										<span class="facet">(64)</span>
 									</li>
 									<li>
-										<a href="/for-sale/q_java/price_50-100/">€50 to €100</a>
+										<a href="#">€50 to €100</a>
 										<span class="facet">(42)</span>
 									</li>
 									<li>
-										<a href="/for-sale/q_java/price_100-250/">€100 to €250</a>
+										<a href="#">€100 to €250</a>
 										<span class="facet">(33)</span>
 									</li>
 									<li>
-										<a href="/for-sale/q_java/price_250-500/">€250 to €500</a>
+										<a href="#">€250 to €500</a>
 										<span class="facet">(10)</span>
 									</li>
 									<li>
-										<a href="/for-sale/q_java/price_500-*/">€500 &amp; Above</a>
+										<a href="#">€500 &amp; Above</a>
 										<span class="facet">(7)</span>
 									</li>
 								</ul>
 
 								<div>
-									<input type="text" name="rs_min_price" value="" id="rs_min_price" class="half_width text_input">
+									<input type="text" value="" class="span5">
 									<span class="range_seperator">to</span>
-									<input type="text" name="rs_max_price" value="" id="rs_max_price" class="half_width text_input">
+									<input type="text" value="" class="span5">
 								</div>
 							</div>
 						</div>
@@ -530,10 +443,10 @@
 				</div>
 				<div class="search-results span9">
 					<div class="well">
-					<div class="search-result info-box">
+					<div class="search-result result-box">
 
 						<div class="img-holder">
-							<a href="#"> <img src="http://placehold.it/180x150" alt="Factory unlocked Iphone 4S 16GB"
+							<a href="item.html"> <img src="http://placehold.it/180x150" alt="Factory unlocked Iphone 4S 16GB"
 							width="180" height="120"> </a>
 						</div>
 
@@ -546,7 +459,7 @@
 									</dd>
 								</dl>
 
-								<h4 class=""><a href="#" title="Factory unlocked Iphone 4S 16GB"> Factory unlocked Iphone 4S 16GB </a></h4>
+								<h4 class=""><a href="item.html" title="Factory unlocked Iphone 4S 16GB"> Factory unlocked Iphone 4S 16GB </a></h4>
 							</div>
 
 							<!-- List under the heading -->
@@ -599,10 +512,10 @@
 					</div>
 
 					<div style="clear:both"></div>
-					<div class="search-result info-box">
+					<div class="search-result result-box">
 
 						<div class="img-holder">
-							<a href="#"> <img src="http://placehold.it/180x150" alt="Factory unlocked Iphone 4S 16GB"
+							<a href="item.html"> <img src="http://placehold.it/180x150" alt="Factory unlocked Iphone 4S 16GB"
 							width="180" height="120"> </a>
 						</div>
 
@@ -615,7 +528,7 @@
 									</dd>
 								</dl>
 
-								<h4 class=""><a href="#" title="Road Racing Bike Shimano 21 Gears Alloy Frame"> Road Racing Bike Shimano 21 Gears Alloy Frame </a></h4>
+								<h4 class=""><a href="item.html" title="Road Racing Bike Shimano 21 Gears Alloy Frame"> Road Racing Bike Shimano 21 Gears Alloy Frame </a></h4>
 							</div>
 
 							<!-- List under the heading -->
