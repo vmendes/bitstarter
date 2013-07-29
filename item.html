@@ -4,20 +4,91 @@
 		<meta charset="utf-8">
 		<title>BitBarter</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-		<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="http://noizwaves.github.io/bootstrap-social-buttons/stylesheets/social-buttons.css" rel="stylesheet">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 		<link href="http://caseyjhol.github.io/bootstrap-select/stylesheets/bootstrap-select.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.js"></script>
 		<script src="http://caseyjhol.github.io/bootstrap-select/javascripts/bootstrap-select.js"></script>
 		<style type="text/css">
+			@media (min-width: 980px) {
+				body.bitstarter {
+					padding-top: 60px;
+				}
+				}
+				.bitstarter .main-container {
+					max-width: 940px;
+				}
+
+			}
 			@media (max-width: 980px) {
 			}
 			@media (min-width: 768px) {
+				.bitstarter .row-fluid [class*="span"] {
+					margin-left: 0;
+				}
 			}
 			@media (max-width: 767px) {
+			}
+
+			
+
+			.bitstarter .item-photo {
+				padding: 10px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+				//width: 396px;
+				height: 296px;
+				border: 1px solid #ddd;
+				overflow: hidden;
+				text-align: center;
+			}
+			.bitstarter .item-info {
+				//width: 516px;
+				margin-bottom: 20px;
+			}
+			
+			.bitstarter .item-info .item-offer {
+				background: #f7f7f7;
+				font-weight: bold;
+				font-size: 15px;
+				padding: 10px 0 0;
+			}
+			
+			.bitstarter .item-info .dl-horizontal {
+				margin: 0;
+			}
+			.bitstarter .item-info .item-offer dt {
+				padding: 5px 0;
+			}
+
+			.bitstarter .item-info .item-price, 
+			.bitstarter .item-info .item-offer, 
+			.bitstarter .item-info .item-highest-offer, 
+			.bitstarter .item-info .item-seller {
+				border-bottom: 2px solid #f3f3f3;
+			}
+			
+			.bitstarter .item-info .item-highest-offer,
+			.bitstarter .item-info .item-seller,
+			.bitstarter .item-info .item-actions {
+				padding: 10px 0;
+			}
+			
+			.bitstarter .item-description {
+				padding: 10px 0;
+			}
+			
+			.bitstarter .item-comment {
+				margin-bottom: 10px;
+			}
+			.bitstarter .item-comment .comment-avatar {
+				margin-right: 10px;
+			}
+			.bitstarter .item-comment .comment-content {
+				min-height: 73px;
 			}
 
 		</style>
@@ -29,7 +100,7 @@
 
 		</div>
 
-		<div class="container-fluid">
+		<div class="container main-container">
 
 			<div class="row-fluid item-page">
 				<div class="item-header span12">
@@ -39,106 +110,117 @@
 					<div class="item-photo span5">
 						<img src="http://placehold.it/250x250" />
 					</div>
-					<div class="item-info span6">
-						<div class="span12">
+					<div class="item-info span7">
 
-							<div class="item-price span12 text-right">
-								<span class=""> Asking price: <strong class=""> €10 </strong></span>
-							</div>
+						<div class="item-price span12 text-right">
+							<span class=""> Estimated Value: <strong class=""> €10 </strong></span>
+						</div>
 
-							<div class="item-offer span12 well">
-								<span class="span4 text-right">Make an offer:</span>
-								<form class="form-inline form-horizontal input-append span7" method="GET" action="">
-									<input type="text" class="input-small">
-									<button class="btn">
-										Place Offer
-									</button>
-								</form>
-							</div>
-							<div class="item-highest-offer span12">
-
+						<div class="item-offer span12">
 								<dl class="dl-horizontal ">
 
 									<dt class="">
-										Highest Offer:
+										Make an Offer:
 									</dt>
-									<dd class="">
-										No offers yet
-
+									<dd>
+										<form class="form-inline form-horizontal input-append" method="GET" action="">
+											<input type="text" class="input-small">
+											<button class="btn btn-danger">
+												Place Offer
+											</button>
+										</form>
 									</dd>
 									<!--[if lte IE 7]>
 									<dt class="clear"></dt>
 									<dd class="clear"></dd>
 									<![endif]-->
 								</dl>
-							</div>
+						</div>
+						<div class="item-highest-offer span12">
 
-							<!-- Ad and user info  -->
-							<div class="span12">
+							<dl class="dl-horizontal ">
 
-								<dl class="dl-horizontal">
+								<dt class="">
+									Highest Offer:
+								</dt>
+								<dd class="">
+									No offers yet
 
-									<dt class="">
+								</dd>
+								<!--[if lte IE 7]>
+								<dt class="clear"></dt>
+								<dd class="clear"></dd>
+								<![endif]-->
+							</dl>
+						</div>
 
-										Seller:
-									</dt>
+						<!-- Ad and user info  -->
+						<div class="item-seller span12">
 
-									<dd class="">
+							<dl class="dl-horizontal">
 
-										<a class="inverted" href="#">jazon</a>
+								<dt class="">
 
-										<span class="user_feedback_detail smi"> <span class="score"> <span class="data data-feedback-num">6</span> [6] </span> <span class="star_container"> <span class="data data-rating-type">gold</span> <img alt="A star" src="http://c1.adsimg.com/i/star_icon.png" class="user_star"> </span> <img class="user_badge sms-badge-tooltip smi_ad_desc" src="http://c3.adsimg.com/i/user_silver_shield_2_sm.png" alt="This user is a verified user of Adverts.ie"> </span>
-									</dd>
-									<dt class="">
-										Location:
-									</dt>
-									<dd class="">
+									Seller:
+								</dt>
 
-										Rialto, Dublin
-									</dd>
+								<dd class="">
 
-									<dt class="">
-										Entered/Renewed:
-									</dt>
-									<dd class="">
-										25/07/2013 11:00 pm (about a day ago)
-									</dd>
-									<dt class="">
-										Ad Views:
-									</dt>
-									<dd class="">
-										78
-									</dd>
+									<a class="inverted" href="#">jazon</a>
 
-								</dl>
-							</div>
+									<span class="user_feedback_detail smi"> <span class="score"> <span class="data data-feedback-num">6</span> [6] </span> <span class="star_container"> <span class="data data-rating-type">gold</span> <img alt="A star" src="http://c1.adsimg.com/i/star_icon.png" class="user_star"> </span> <img class="user_badge sms-badge-tooltip smi_ad_desc" src="http://c3.adsimg.com/i/user_silver_shield_2_sm.png" alt="This user is a verified user of Adverts.ie"> </span>
+								</dd>
+								<dt class="">
+									Location:
+								</dt>
+								<dd class="">
+
+									Rialto, Dublin
+								</dd>
+
+								<dt class="">
+									Entered/Renewed:
+								</dt>
+								<dd class="">
+									25/07/2013 11:00 pm (about a day ago)
+								</dd>
+								<dt class="">
+									Ad Views:
+								</dt>
+								<dd class="">
+									78
+								</dd>
+
+							</dl>
+						</div>
+						<div class="item-actions span12 text-center">
 							<ul class="inline">
-
+	
 								<li class="">
 									<a href="#comments">Offers</a>
 									<span class="count">(0)</span>
 								</li>
-
+	
 								<li class="">
 									<a href="#comments">Comments</a>
 									<span class="count">(0)</span>
 								</li>
-
+	
 								<li>
 									<a href="#">Watch Ad</a>
 								</li>
-
+	
 								<li>
 									<a href="#" class="" > Report Abuse </a>
 								</li>
-
+	
 							</ul>
-
 						</div>
+
 					</div>
 				</div>
-				<div class="item-description span11">
-					<div class="well">
+				<div class="item-description span12">
+					<div class="span11">
 						<h4>Description:</h4>
 						<p>
 							<strong>Condition: New</strong>
@@ -167,9 +249,9 @@
 
 					</div>
 				</div>
-				<div class="item-comments span12">
+				<div class="item-comments span12 thumbnails">
 					<h4>Comments</h4>
-					<div class="item-comment span12" style="min-height: 75px">
+					<div class="item-comment span12 thumbnail">
 						<div class="comment-avatar pull-left">
 							<a href="#"> <img src="http://placehold.it/73x73"> </a>
 						</div>
@@ -184,8 +266,8 @@
 						</div>
 
 					</div>
-					
-					<div class="item-comment span12" style="margin-top: 10px">
+
+					<div class="item-comment span12 thumbnail">
 						<div class="comment-avatar pull-left">
 							<a href="#"> <img src="http://placehold.it/73x73"> </a>
 						</div>
